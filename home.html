@@ -5,14 +5,23 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/bootstrap-grid.css"/>
     <link rel="stylesheet" href="css/bootstrap.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <style>
+        .carousel-indicators li {
+            background-color: #005cbf;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand" href="#"><img style="height: 40px" src="img/scooter.png"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Logo</a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -46,25 +55,82 @@
             </h1>
         </div>
     </div>
-    <div class="row mt-5  text-center">
+    <div class="row  text-center">
         <div class="col">
-            <h4>
+            <p>
                 kg CO2 saved per year
-            </h4>
+            </p>
         </div>
         <div class="col">
-            <h4>
-                times faster
-            </h4>
+            <p>
+                times faster than a bicycle
+            </p>
         </div>
         <div class="col">
-            <h4>
-                50%
-            </h4>
+            <p>
+                discount for the 1st month
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                        <div class="card d-block w-100" style="">
+                            <img class="card-img-top" src="img/scooter1.jpg" alt="Card image cap">
+                            <div class="card-body mt-2">
+                                <div class="row">
+                                    <h5 class="card-title text-uppercase">Swagtron</h5>
+                                    <span class="badge badge-primary">200DKK</span>
+                                </div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary text-uppercase">Rent</a>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="carousel-item">
+
+                        <div class="card d-block w-100" style="">
+                            <img class="card-img-top" src="img/scooter2.jpg" alt="Card image cap">
+                            <div class="card-body mt-2">
+                                <h5 class="card-title text-uppercase">Scooter2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary text-uppercase">Rent</a>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="carousel-item">
+
+                        <div class="card d-block w-100" style="">
+                            <img class="card-img-top" src="img/scooter1.jpg" alt="Card image cap">
+                            <div class="card-body mt-2">
+                                <h5 class="card-title text-uppercase">Swagtron</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary text-uppercase">Rent</a>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </div>
-
 
 </body>
 </html>
