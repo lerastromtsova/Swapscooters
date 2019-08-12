@@ -9,6 +9,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <style>
+        a {
+            color: black;
+        }
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,24 +43,55 @@
 </nav>
 
 <div class="container">
-    <h2 class="mt-2">Delivery</h2>
-    <div class="card d-block w-100" style="">
-        <img class="card-img-top" src="img/scooter2.jpg" alt="Card image cap">
-        <div class="card-body mt-2 mb-2">
-            <h5 class="card-title text-uppercase">Scooter2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="row">
+        <div class="col"><h2 class="mt-2">Delivery</h2></div>
+
+    </div>
+    <div class="row">
+        <div class="card d-block w-100" style="">
+            <a href="success_page.html">
+
+                <div class="card-body mt-2 mb-2">
+                    <h5 class="card-title text-uppercase">Pick up at store</h5>
+                    <p class="card-text">Kronversky av. 49, 10:00-20:00</p>
+
+                </div>
+                <img class="card-img-bottom" src="img/map.png" alt="Card image cap">
+            </a>
+        </div>
+    </div>
+
+    <div class="row mt-3 mb-3 text-center text-uppercase">
+        <div class="col">
+            Or
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="card d-block w-100" style="">
+
+
+            <div class="card-body mt-2">
+                <a href="success_page.html">
+                    <h5 class="card-title text-uppercase">Deliver to home</h5>
+                </a>
+            </div>
+            <form>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault07">Date</label>
+                    <input type="text" class="form-control" id="validationDefault07" placeholder="Date" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault08">Time</label>
+                    <input type="text" class="form-control" id="validationDefault08" placeholder="Time" required>
+                </div>
+            </form>
 
         </div>
     </div>
-    OR
-    <div class="card d-block w-100" style="">
-        <img class="card-img-top" src="img/scooter2.jpg" alt="Card image cap">
-        <div class="card-body mt-2 mb-2">
-            <h5 class="card-title text-uppercase">Scooter2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-        </div>
-    </div>
+
 
 
 </div>
